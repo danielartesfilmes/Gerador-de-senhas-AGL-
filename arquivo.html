@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="pt"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Gerador de Senhas</title> 
+  <link rel="stylesheet" href="styles.css"> 
+ <style type="text/css" id="dcoder_stylesheet">body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    text-align: center;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+h2 {
+    color: #1e3c72;
+    font-size: 1.8rem;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 15px 0;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background: linear-gradient(to right, #2a5298, #1e3c72);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Estilização do artigo */
+.article {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    margin-top: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    text-align: left;
+}
+
+.article h3 {
+    color: #1e3c72;
+}
+
+.article p, .article ul {
+    color: #333;
+    font-size: 1rem;
+}
+
+.article ul {
+    padding-left: 20px;
+}</style></head> 
+ <body> 
+  <div class="container"> 
+   <h2>🔐 Gerador de Senhas Seguras</h2> 
+   <input type="text" id="password" readonly aria-label="Campo de senha gerada"> 
+   <div class="button-group"> <button onclick="generatePassword()" aria-label="Gerar nova senha">Gerar Senha</button> <button onclick="copyPassword()" aria-label="Copiar senha gerada">Copiar</button> 
+   </div> 
+  </div> <!-- Artigo sobre Segurança Cibernética --> 
+  <article class="article"> 
+   <h3>🛡️ Como se Proteger Contra Crimes Cibernéticos</h3> 
+   <p>No mundo digital, a segurança online é essencial. Aqui estão algumas dicas para evitar ataques:</p> 
+   <ul> 
+    <li><strong>Use senhas fortes:</strong> Evite combinações óbvias e use caracteres variados.</li> 
+    <li><strong>Ative a autenticação de dois fatores:</strong> Isso adiciona uma camada extra de segurança.</li> 
+    <li><strong>Desconfie de e-mails suspeitos:</strong> Não clique em links desconhecidos.</li> 
+    <li><strong>Atualize seus dispositivos:</strong> Mantenha software e antivírus sempre atualizados.</li> 
+   </ul> 
+   <p>Seguindo essas dicas, você estará mais protegido contra golpes e invasões online.</p> 
+  </article> 
+  <script src="script.js"></script> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Política de Privacidade - AGL Senhas</title> 
+  <link rel="stylesheet" href="styles.css"> 
+  <div class="container"> 
+   <h2>Política de Privacidade do AGL Senhas</h2> 
+   <p><strong>Última atualização:</strong> 28 de fevereiro de 2025</p> 
+   <p><strong>Criador do site:</strong> Daniel Sangueve Manuel Costa</p> 
+   <p>O site <strong>AGL Senhas</strong> ("nós", "nosso" ou "site") está comprometido em proteger a privacidade e a segurança dos dados dos nossos usuários. Esta Política de Privacidade explica como coletamos, usamos, compartilhamos e protegemos as informações pessoais dos usuários que acessam nosso site. Ao utilizar o AGL Senhas, você concorda com os termos desta política.</p> 
+   <h3>1. Informações Coletadas</h3> 
+   <ul> 
+    <li><strong>Informações não pessoais:</strong> Dados técnicos, como endereço IP, tipo de navegador, sistema operacional, páginas visitadas e tempo de acesso.</li> 
+    <li><strong>Informações pessoais:</strong> Se você optar por se cadastrar ou entrar em contato conosco, podemos coletar seu nome, endereço de e-mail e outras informações fornecidas voluntariamente.</li> 
+    <li><strong>Senhas geradas:</strong> As senhas geradas pelo site são criadas localmente no seu dispositivo e não são armazenadas ou coletadas por nós.</li> 
+   </ul> 
+   <h3>2. Uso das Informações</h3> 
+   <ul> 
+    <li>Fornecer e melhorar nossos serviços, incluindo a geração de senhas seguras.</li> 
+    <li>Personalizar a experiência do usuário no site.</li> 
+    <li>Responder a solicitações, dúvidas ou feedbacks enviados por você.</li> 
+    <li>Enviar comunicações importantes, como atualizações do site ou alterações nesta política.</li> 
+    <li>Garantir a segurança e integridade do site.</li> 
+   </ul> 
+   <h3>3. Compartilhamento de Informações</h3> 
+   <p>O AGL Senhas não vende, aluga ou compartilha suas informações pessoais com terceiros, exceto nas seguintes situações:</p> 
+   <ul> 
+    <li><strong>Com seu consentimento:</strong> Se você autorizar o compartilhamento de informações.</li> 
+    <li><strong>Por obrigação legal:</strong> Se exigido por lei ou por autoridades competentes.</li> 
+    <li><strong>Parceiros de confiança:</strong> Com provedores de serviços que ajudam a operar o site (por exemplo, hospedagem de sites), desde que esses parceiros concordem em manter a confidencialidade das informações.</li> 
+   </ul> 
+   <h3>4. Segurança dos Dados</h3> 
+   <p>O AGL Senhas adota medidas técnicas e organizacionais para proteger suas informações contra acesso não autorizado, alteração, divulgação ou destruição. No entanto, nenhum sistema de segurança é 100% infalível, e não podemos garantir a segurança absoluta dos dados.</p> 
+   <h3>5. Cookies e Tecnologias Semelhantes</h3> 
+   <p>O site pode usar cookies e tecnologias semelhantes para melhorar a experiência do usuário. Os cookies são pequenos arquivos de texto armazenados no seu dispositivo. Você pode configurar seu navegador para recusar cookies, mas isso pode limitar o funcionamento de algumas partes do site.</p> 
+   <h3>6. Direitos dos Usuários</h3> 
+   <p>Dependendo da sua localização, você pode ter os seguintes direitos em relação às suas informações pessoais:</p> 
+   <ul> 
+    <li><strong>Acesso:</strong> Solicitar uma cópia das informações que temos sobre você.</li> 
+    <li><strong>Correção:</strong> Solicitar a correção de informações incorretas ou incompletas.</li> 
+    <li><strong>Exclusão:</strong> Solicitar a exclusão de suas informações pessoais.</li> 
+    <li><strong>Revogação de consentimento:</strong> Revogar o consentimento para o uso de suas informações.</li> 
+   </ul> 
+   <p>Para exercer esses direitos, entre em contato conosco através do e-mail: <strong>[inserir e-mail de contato]</strong>.</p> 
+   <h3>7. Alterações nesta Política</h3> 
+   <p>Esta Política de Privacidade pode ser atualizada periodicamente. Recomendamos que você revise esta página regularmente para se manter informado sobre como estamos protegendo suas informações. Alterações significativas serão comunicadas por e-mail ou através de um aviso no site.</p> 
+   <h3>8. Contato</h3> 
+   <p>Se você tiver dúvidas, preocupações ou solicitações relacionadas a esta Política de Privacidade, entre em contato conosco:</p> 
+   <ul> 
+    <li><strong>Nome do responsável:</strong> Daniel Sangueve Manuel Costa</li> 
+    <li><strong>E-mail:</strong> [inserir e-mail de contato]</li> 
+    <li><strong>Site:</strong> [inserir URL do site]</li> 
+   </ul> 
+   <h3>9. Jurisdição e Lei Aplicável</h3> 
+   <p>Esta Política de Privacidade é regida pelas leis do <strong>[inserir país/estado]</strong>. Qualquer disputa relacionada ao uso deste site será resolvida nos tribunais competentes dessa jurisdição.</p> 
+   <h3>10. Consentimento</h3> 
+   <p>Ao usar o site AGL Senhas, você concorda com os termos desta Política de Privacidade. Se você não concordar com esta política, por favor, não utilize nosso site.</p> <a href="index.html" class="back-link">⬅ Voltar ao site</a> 
+  </div> 
+ 
+<script type="text/javascript" id="dcoder_script">function generatePassword() {
+    const length = 12;
+    const charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_-+=<>?";
+    let password = "";
+    
+    for (let i = 0; i < length; i++) {
+        let randomIndex = Math.floor(Math.random() * charset.length);
+        password += charset[randomIndex];
+    }
+    
+    document.getElementById("password").value = password;
+}
+
+function copyPassword() {
+    let passwordField = document.getElementById("password");
+    
+    if (!passwordField.value) {
+        alert("Gere uma senha primeiro!");
+        return;
+    }
+
+    passwordField.select();
+    passwordField.setSelectionRange(0, 99999); // Para compatibilidade com dispositivos móveis
+
+    try {
+        document.execCommand("copy"); // Método mais compatível
+        alert("Senha copiada para a área de transferência!");
+    } catch (err) {
+        alert("Erro ao copiar senha. Copie manualmente.");
+    }
+}</script></body></html>
